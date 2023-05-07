@@ -1,4 +1,9 @@
+// Styles
 import '@styles/globals.scss'
+
+// Components
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
 
 export const metadate = {
     title: "Promptopia",
@@ -14,6 +19,7 @@ const RootLayout = ({ children }) => {
             </div>
 
             <main className='app'>
+                <Nav />
                 {children}
             </main>
         </body>
